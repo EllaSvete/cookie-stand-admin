@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import CookieForm from '../components/CookieForm';
 import Footer from '../components/Footer';
-import ReportTable from '../components/Footer';
+import ReportTable from '../components/ReportTable';
 import { useState } from 'react';
 
 export default function Home() {
