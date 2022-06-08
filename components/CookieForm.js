@@ -2,9 +2,6 @@ import { useState } from 'react'
 
 export default function CookieForm(props) {
 
-  const [state, setState] = useState()
-
-
   function handleSubmit(event) {
     event.preventDefault();
     var locationDetails = {}
@@ -12,7 +9,7 @@ export default function CookieForm(props) {
     locationDetails["Min Customers per Hour"] = parseInt(event.target.minCust.value);
     locationDetails["Max Customers per Hour"] = parseInt(event.target.maxCust.value);
     locationDetails["Average Cookies per Hour"] = parseInt(event.target.avgCookie.value);
-    setState(locationDetails);
+    props.inputHandler(locationDetails);
     event.target.reset();
   }
 
@@ -37,13 +34,13 @@ export default function CookieForm(props) {
           <label className='block text-center tracking-wide mb-2' htmlFor='minCust'>Min Customer per Hour</label>
           <input className='w-full leading-tight' id='minCust' type='number' required />
 
+        </div>
           <label className='block text-center tracking-wide mb-2' htmlFor='maxCust'>Max Customer per Hour</label>
           <input className='w-full' id='maxCust' type='number' required />
 
           <label className='block text-center tracking-wide mb-2' htmlFor='avgCookie'>Average Cookies per Hour</label>
           <input className='w-full' id='avgCookie' type='float' required />
 
-        </div>
 
         <div className='h-100 w-full md:w-1/4'>
 
