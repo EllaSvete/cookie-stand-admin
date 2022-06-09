@@ -39,7 +39,7 @@ export default function ReportTable({ storeData }) {
           <tr>
           </tr>
         </tbody>
-        <tfoot>
+        <tfoot className="border-2 border-black">
           <tr className="border-2 border-black">
             <td className="border-2 border-black font-bold text-center">
               Totals
