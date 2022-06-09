@@ -31,7 +31,7 @@ export default function ReportTable({ storeData }) {
               <td className='flex justify-between'>
                 {store.location}
               </td >
-              {store.hourlySales.map((cookies, i) => <td className=' text-center border-2 border-black' key={i}> {cookies} </td>)}
+              {store.hourly_sales.map((cookies, i) => <td className=' text-center border-2 border-black' key={i}> {cookies} </td>)}
               {store.hourlyTotals.map((totals, i) => <td key={i}>{totals}</td>)}
             </tr>
           )

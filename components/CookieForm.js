@@ -9,7 +9,7 @@ export default function CookieForm(props) {
     locationDetails.minCust = parseInt(event.target.minCust.value);
     locationDetails.maxCust = parseInt(event.target.maxCust.value);
     locationDetails.avgCookie = parseInt(event.target.avgCookie.value);
-    locationDetails.hourlySales = [48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36]
+    locationDetails.hourly_sales = [48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36]
     locationDetails.hourlyTotals = [516]
     locationDetails.allTotals=[]
     props.inputHandler(locationDetails);
