@@ -25,7 +25,7 @@ export default function CookieStandAdmin({user, logout}) {
         {/* <ReportTable storeData={storeData} stands={resources || []} deleteStand={deleteResource}/> */}
       </main>
       {/* <Footer number={storeData.length}/> */}
-      <Footer/>
+      <Footer stand_count={resources}/>
     </>
   )
 }
