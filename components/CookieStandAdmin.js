@@ -12,15 +12,15 @@ export default function CookieStandAdmin({user, logout}) {
 
   // const [storeData, setStoreData] = useState([])
 
-  function inputHandler(data) {
-    setStoreData([...storeData, data]);
-  }
+  // function inputHandler(data) {
+  //   setStoreData([...storeData, data]);
+  // }
 
   return (
     <>
       <Header user={user} logout={logout}/>
       <main className='flex flex-col items-center  bg-emerald-50'>
-        <CookieForm inputHandler={inputHandler} createStand={createResource}/>
+        <CookieForm createStand={createResource}/>
         <ReportTable stands={resources || []} deleteStand={deleteResource}/>
         {/* <ReportTable storeData={storeData} stands={resources || []} deleteStand={deleteResource}/> */}
       </main>

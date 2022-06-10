@@ -1,8 +1,8 @@
 import { hours } from "../data";
 
-export default function ReportTable({ stands, deleteStand }) {
+export default function ReportTable({ stands, deleteStand, cookie_stand_info }) {
 
-  function displayTable() {
+  // function displayTable() {
 
     return (
       <table className='mb-12 col-span-2 col-start-3 m-2 bg-emerald-500 rounded-lg'>
@@ -10,10 +10,7 @@ export default function ReportTable({ stands, deleteStand }) {
           <tr>
             <th className='text-center font-bold px-5'>Location</th>
 
-            {hours.map((hour, i) => {
-              return (
-                <th key={i} className='font-bold px-4'>{hour}</th>
-              )
+            {hours.map((hour, i) => {(<th key={i} className='font-bold px-4'>{hour}</th>)
             }
             )}
             <td className="font-bold pr-5">
@@ -61,10 +58,13 @@ export default function ReportTable({ stands, deleteStand }) {
       </tr>
     );
   }
-}
+// }
+
+
+
 
 //   function dataTable() {
-//     if (storeData.length == 0) {
+//     if (cookie_stand_info.length == 0) {
 //       return (
 //         <p>No Cookie Stands Available</p>
 //       );
