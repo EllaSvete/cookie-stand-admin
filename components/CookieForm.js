@@ -16,6 +16,7 @@ export default function CookieForm(props) {
       minimum_customers_per_hour: parseInt(event.target.minCust.value),
       maximum_customers_per_hour: parseInt(event.target.maxCust.value),
       average_cookies_per_sale: parseFloat(event.target.avgCookie.value),
+      // hourly_sales:
       owner: user.id,
     }
     props.createStand(cookie_stand_info)

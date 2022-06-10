@@ -7,8 +7,9 @@ export default function Header({ user, logout }){
       <h1 className="text-4xl bg-emerald-500 px-6 py-4">Cookie Stand Admin</h1>
       <div className="items-center pb-2 pt-2 font-medium">
       <Link href="/overview">
-        <button onClick={logout} className='bg-emerald-50 text-zinc-600 px-2 py-1 mx-3 my-3 rounded-md'>Logout</button>
+        <button className='bg-emerald-50 text-zinc-600 px-2 py-1 mx-3 my-3 rounded-md'>overview</button>
       </Link>
+      <button onClick={logout} className='bg-emerald-50 text-zinc-600 px-2 py-1 mx-3 my-3 rounded-md'>Logout</button>
       </div>
     </header>
     </>
