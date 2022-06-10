@@ -1,18 +1,24 @@
-import { useState } from 'react'
+import useResource from '../hooks/useResource';
+import {useAuth} from '../contexts/auth';
+import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
 
 export default function CookieForm(props) {
 
+  const { user } = useAuth();
+  const { createResource } = useResource();
+
   function handleSubmit(event) {
     event.preventDefault();
-    var locationDetails = {}
-    locationDetails.location = event.target.location.value;
-    locationDetails.minCust = parseInt(event.target.minCust.value);
-    locationDetails.maxCust = parseInt(event.target.maxCust.value);
-    locationDetails.avgCookie = parseInt(event.target.avgCookie.value);
-    locationDetails.hourly_sales = [48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36]
-    locationDetails.hourlyTotals = [516]
-    locationDetails.allTotals=[]
-    props.inputHandler(locationDetails);
+
+    console.log(user);
+    const cookie_stand_info = {
+      location: event.target.location.value,
+      minimum_customers_per_hour: parseInt(event.target.minCust.value),
+      maximum_customers_per_hour: parseInt(event.target.maxCust.value),
+      average_cookies_per_sale: parseFloat(event.target.avgCookie.value),
+      owner: user.id,
+    }
+    props.createStand(cookie_stand_info)
     event.target.reset();
   }
 
