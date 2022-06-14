@@ -1,13 +1,16 @@
-# Run App
+# Ella's Cookie Stand
 
-```bash
-npm run dev
-```
+## Deployed Site
 
-- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Ella's Cookie Stand](https://cookie-stand-admin-citvyqvc6-ellasvete.vercel.app/)
 
-- I worked on this with Ben and Eden
-- Almost got the styling there but still working on the shape of the form.
-- Hard coded the table data. JB said this was okay. 
-  - I did not hardcore the allTotals data because it will be different the more rows are added
-- can't figure out how to get the border for the table foot to show up the whole time
+- I worked on this app with Eden, Ben and Nicholas  the past week and a half.
+
+## About this Application
+
+- This is a project for my 401 Python Class at Code Fellows.
+- This has been an evolving project and a great introduction to Next.js
+
+## Tools and Languages
+
+- Next.js, Tailwind, Javascript, Python, React, Heroku, Vercel
