@@ -2,7 +2,7 @@ import useResource from '../hooks/useResource';
 import {useAuth} from '../contexts/auth';
 import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
 
-export default function CookieForm(props) {
+export default function CookieForm() {
 
   const { user } = useAuth();
   const { createResource } = useResource();
@@ -16,10 +16,10 @@ export default function CookieForm(props) {
       minimum_customers_per_hour: parseInt(event.target.minCust.value),
       maximum_customers_per_hour: parseInt(event.target.maxCust.value),
       average_cookies_per_sale: parseFloat(event.target.avgCookie.value),
-      // hourly_sales:
+      // hourly_sales: parseInt(event.target.value),
       owner: user.id,
     }
-    props.createStand(cookie_stand_info)
+    createResource(cookie_stand_info)
     event.target.reset();
   }
 

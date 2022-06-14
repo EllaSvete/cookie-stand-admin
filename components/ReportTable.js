@@ -4,22 +4,22 @@ export default function ReportTable({ stands, deleteStand,  }) {
 
   // function displayTable() {
 
-    // function hourlyTotalCal() {
-    //   let totalAllHours = 0;
-    //   let hourlyTotal = []
-    //   for (let i = 0; i < hours.length; i++) {
-    //     let sumHour = 0;
-    //     stands.map(element => {
-    //       sumHour += element.hourly_sales[i]
-    //     })
-    //     hourlyTotal[i] = sumHour
-    //   }
-    //   totalAllHours = hourlyTotal.reduce((accumulator, currentValue) => accumulator + currentValue)
-    //   console.log(totalAllHours)
-    //   hourlyTotal[hours.length] = totalAllHours;
-    //   console.log(hourlyTotal)
-    //   return (hourlyTotal)
-    // }
+  //   function hourlyTotalCal() {
+  //     let totalAllHours = 0;
+  //     let hourlyTotal = []
+  //     for (let i = 0; i < hours.length; i++) {
+  //       let sumHour = 0;
+  //       stands.map(element => {
+  //         sumHour += element.hourly_sales[i]
+  //       })
+  //       hourlyTotal[i] = sumHour
+  //     }
+  //     totalAllHours = hourlyTotal.reduce((accumulator, currentValue) => accumulator + currentValue)
+  //     console.log(totalAllHours)
+  //     hourlyTotal[hours.length] = totalAllHours;
+  //     console.log(hourlyTotal)
+  //     return (hourlyTotal)
+  //   }
 
     return (
       <table className='mb-12 col-span-2 col-start-3 m-2 bg-emerald-500 rounded-lg '>

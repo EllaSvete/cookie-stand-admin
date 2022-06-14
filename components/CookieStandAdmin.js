@@ -18,9 +18,9 @@ export default function CookieStandAdmin({user, logout}) {
 
   return (
     <>
-      <Header user={user} logout={logout}/>
+      {/* <Header user={user} logout={logout}/> */}
       <main className='flex flex-col items-center  bg-emerald-50'>
-        <CookieForm createStand={createResource}/>
+        <CookieForm/>
         <ReportTable stands={resources || []} deleteStand={deleteResource}/>
         {/* <ReportTable storeData={storeData} stands={resources || []} deleteStand={deleteResource}/> */}
       </main>
